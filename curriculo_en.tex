@@ -1,0 +1,192 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[top=0.5in,bottom=0.5in,left=0.62in,right=0.62in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{xcolor}
+\usepackage{parskip}
+
+\definecolor{accent}{HTML}{1A1A1A}
+\definecolor{link}{HTML}{0056B3}
+\hypersetup{
+colorlinks=true,
+urlcolor=link,
+pdfborder={0 0 0}
+}
+
+\pagestyle{empty}
+
+\titleformat{\section}
+{\normalsize\bfseries\color{accent}}
+{}{0em}{}
+[\titlerule]
+
+\titlespacing*{\section}{0pt}{7pt}{3pt}
+
+\setlist[itemize]{
+leftmargin=14pt,
+itemsep=1.5pt,
+topsep=2pt,
+parsep=0pt
+}
+
+\newcommand{\job}[4]{%
+\textbf{#1} \hfill \textbf{#2}\\
+\textit{#3} \hfill \textit{#4}\\[-2pt]
+}
+
+\begin{document}
+
+\begin{center}
+
+{\Large\bfseries Yago Henrique Teixeira}\\[4pt]
+
+\textbf{Senior iOS Engineer | Swift | SwiftUI | Mobile Architecture}\\[4pt]
+
+Belo Horizonte, Brazil \quad | \quad +55 31 99834-8635 \quad | \quad
+\href{mailto:yago.ht@icloud.com}{yago.ht@icloud.com}
+\quad | \quad
+\href{https://linkedin.com/in/yagohtx}{linkedin.com/in/yagohtx}
+
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Professional Summary}
+
+Senior iOS Engineer with 6 years of software engineering experience designing, modernizing and scaling mobile applications. Specialized in Swift, SwiftUI and scalable mobile architectures, with extensive experience leading legacy migrations, modularizing codebases and improving engineering productivity through AI-powered development workflows. Currently building a multi-country B2B e-commerce platform at AB InBev while collaborating with distributed teams and driving architectural decisions across shared modules.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Technical Skills}
+
+\textbf{Languages:}
+Swift, Java, JavaScript, SQL
+
+\textbf{Mobile:}
+SwiftUI, UIKit, Combine, async/await, Core Data, SwiftData, Realm
+
+\textbf{Architecture:}
+MVVM, The Composable Architecture (TCA), Clean Architecture, Coordinator, Dependency Injection, Modular Architecture
+
+\textbf{Testing:}
+XCTest, Quick, Nimble, SnapshotTesting, ViewInspector
+
+\textbf{Observability:}
+Segment, Firebase Remote Config, Crashlytics, New Relic
+
+\textbf{Developer Tools:}
+Git, Swift Package Manager, CocoaPods, Azure Pipelines, Fastlane
+
+\textbf{AI Engineering:}
+Cursor, AI Agents, Model Context Protocol (MCP), Azure DevOps, Jira, Prompt Engineering
+
+\textbf{Backend:}
+REST APIs, Spring Boot, Apache Kafka, PostgreSQL, MongoDB, WebSockets
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Professional Experience}
+
+\job{Senior iOS Engineer}{Jun 2022 -- Present}{AB InBev}{Belo Horizonte, Brazil}
+
+\begin{itemize}
+
+\item Develop and evolve a multi-country B2B e-commerce iOS application serving retailers across international markets.
+
+\item Led the migration of product discovery features to SwiftUI and The Composable Architecture (TCA), improving maintainability, scalability and long-term feature evolution.
+
+\item Designed reusable SwiftUI components, filters and product trays integrated with a Back-end for Front-end (BFF) architecture using async/await for asynchronous workflows and error handling.
+
+\item Built offline search functionality using Realm and later SwiftData, including recent searches, deep linking and state-driven navigation.
+
+\item Improved product observability by instrumenting analytics events with Segment across critical user journeys including navigation, filtering, search and purchases.
+
+\item Expanded automated test coverage through unit and snapshot testing while leveraging New Relic and Crashlytics to investigate production issues and performance bottlenecks.
+
+\item Delivered features across multiple international markets using Firebase Remote Config, AppLanga and localization workflows to support country-specific releases.
+
+\item Contributed to a modular monorepo composed of nine modules and implemented Mockoon-based development tooling to reduce backend dependencies during local development and product demonstrations.
+
+\item Designed AI-powered engineering workflows integrating Cursor, reusable AI Skills and Model Context Protocol (MCP) with Azure DevOps and Jira, automating task refinement, implementation guidance, documentation, commit generation and pull request creation.
+
+\item Serve as a technical reference for SwiftUI and mobile architecture by supporting code reviews, technical discussions and architectural decisions across multiple engineering teams.
+
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\job{Senior iOS Engineer (Contract)}{2024}{Confidential Client}{Remote}
+
+\begin{itemize}
+
+\item Led the complete modernization of a legacy time-tracking application by replacing a monolithic UIKit codebase with a scalable MVVM architecture built entirely in SwiftUI.
+
+\item Migrated every application screen while preserving existing business rules and minimizing migration risks.
+
+\item Designed and implemented a reusable component library following Atomic Design principles, improving UI consistency and reducing duplicated code.
+
+\item Redesigned the networking layer by replacing a centralized implementation with modular services and clear separation of responsibilities.
+
+\item Refactored persistence, navigation and business logic using Core Data, resulting in a significantly more maintainable and testable codebase.
+
+\item Reverse-engineered undocumented business rules from backend APIs and legacy documentation to rebuild the application's domain model.
+
+\item Introduced automated unit tests covering critical business rules during the migration.
+
+\item Served as technical lead for two developers by mentoring the team, conducting technical interviews and driving architectural decisions throughout the project.
+
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\job{Software Engineer}{Nov 2020 -- Jun 2022}{Avenue Code}{Belo Horizonte, Brazil}
+
+\begin{itemize}
+
+\item Developed backend services using Java, Spring Boot and Node.js.
+
+\item Designed REST APIs, business rules and database integrations using SQL and MongoDB.
+
+\item Built asynchronous event-driven solutions with Apache Kafka.
+
+\item Created automated BDD test suites using Cucumber.
+
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\job{Software Engineering Intern}{May 2020 -- Nov 2020}{Avenue Code}{Belo Horizonte, Brazil}
+
+\begin{itemize}
+
+\item Developed backend services using Java, Spring Boot and Node.js.
+
+\item Implemented asynchronous communication using Apache Kafka for an internal social platform.
+
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education}
+
+\textbf{Bachelor's Degree in Computer Science}
+\hfill
+2017 -- 2020
+
+Centro Universitário de Belo Horizonte (UniBH)
+
+GPA: 91.29 / 100
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Languages}
+
+Portuguese (Native)
+
+English (Full Professional Proficiency)
+
+\end{document}
