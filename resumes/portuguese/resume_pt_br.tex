@@ -1,33 +1,12 @@
 \documentclass[10pt,a4paper]{article}
-
-\usepackage[top=0.5in,bottom=0.5in,left=0.62in,right=0.62in]{geometry}
-\usepackage{enumitem}
-\usepackage{titlesec}
-\usepackage{hyperref}
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
 \usepackage[brazilian]{babel}
-\usepackage{xcolor}
-\usepackage{parskip}
-
-\definecolor{accent}{HTML}{1A1A1A}
-\definecolor{link}{HTML}{0056B3}
-\hypersetup{colorlinks=true,urlcolor=link,pdfborder={0 0 0}}
-\pagestyle{empty}
-\titleformat{\section}{\normalsize\bfseries\color{accent}}{}{0em}{}[\titlerule]
-\titlespacing*{\section}{0pt}{7pt}{3pt}
-\setlist[itemize]{leftmargin=14pt,itemsep=1.5pt,topsep=2pt,parsep=0pt}
-
-\newcommand{\job}[4]{%
-  \textbf{#1} \hfill \textbf{#2}\\
-  \textit{#3} \hfill \textit{#4}\\[-2pt]
-}
+\usepackage{../../styles/resume-style}
 
 \begin{document}
 
 \begin{center}
 {\Large\bfseries Yago Henrique Teixeira}\\[3pt]
-\textbf{Desenvolvedor iOS | Swift | SwiftUI | Arquitetura Mobile}\\[3pt]
+\textbf{Desenvolvedor iOS Sênior | Swift | SwiftUI | Arquitetura Mobile}\\[3pt]
 Belo Horizonte, MG \quad | \quad (31) 99834-8635 \quad | \quad
 \href{mailto:yago.ht@icloud.com}{yago.ht@icloud.com} \quad | \quad
 \href{https://www.linkedin.com/in/yagohtx/}{linkedin.com/in/yagohtx}
@@ -35,39 +14,51 @@ Belo Horizonte, MG \quad | \quad (31) 99834-8635 \quad | \quad
 
 \section{Resumo Profissional}
 
-Desenvolvedor iOS com 6 anos de experiência em desenvolvimento de software, especializado em Swift, SwiftUI e arquitetura de aplicações escaláveis. Atuo na evolução de um aplicativo B2B de e-commerce utilizado em múltiplos países da AB InBev, liderando iniciativas de modernização de código legado, arquitetura modular, testes automatizados, observabilidade e automação do fluxo de desenvolvimento com IA.
+Desenvolvedor iOS com mais de 6 anos de experiência em desenvolvimento de software, especializado em Swift, SwiftUI e arquitetura mobile. Tenho experiência na modernização de aplicações legadas, criação de componentes reutilizáveis, modularização de código e automação de fluxos de engenharia com IA. Na AB InBev, atuo em um aplicativo B2B de e-commerce utilizado em múltiplos países, contribuindo para decisões de arquitetura e evolução de módulos compartilhados.
 
 \section{Competências Técnicas}
 
-\textbf{iOS e arquitetura:} Swift, SwiftUI, UIKit, Combine, async/await, Core Data, Realm, SwiftData, TCA, MVVM, Clean Architecture, Coordinator, Swinject, ViewCode, Deep Links
+\textbf{Linguagens:} Swift, Java, JavaScript, SQL
 
-\textbf{Qualidade:} XCTest, Quick, Nimble, SnapshotTesting, ViewInspector, testes unitários, testes de snapshot
+\textbf{iOS e plataformas Apple:} SwiftUI, UIKit, Combine, async/await, Core Data, SwiftData, Realm, Deep Links
 
-\textbf{Entrega e observabilidade:} Firebase Remote Config, AppLanga, Segment, New Relic, Crashlytics, CocoaPods, Swift Package Manager (SPM), Git, Azure Pipelines, Fastlane
+\textbf{Arquitetura:} MVVM, The Composable Architecture (TCA), Clean Architecture, Coordinator, injeção de dependências (Swinject), arquitetura modular, ViewCode
 
-\textbf{Backend e IA:} Cursor, agentes de IA, Skills, Model Context Protocol (MCP), Jira, Azure, Java, Spring Boot, Node.js, REST APIs, SQL, PostgreSQL, MongoDB, Apache Kafka, WebSockets
+\textbf{Testes:} XCTest, Quick, Nimble, SnapshotTesting, ViewInspector, testes unitários e de snapshot
+
+\textbf{Observabilidade e analytics:} Segment, Firebase Remote Config, Crashlytics, New Relic
+
+\textbf{Ferramentas e CI/CD:} Git, Swift Package Manager (SPM), CocoaPods, Azure Pipelines, Fastlane, Mockoon
+
+\textbf{Engenharia assistida por IA e automação:} Cursor, agentes de IA, Skills, Model Context Protocol (MCP), Azure DevOps, Jira, automação de workflows
+
+\textbf{Backend e dados:} Spring Boot, Node.js, APIs REST, PostgreSQL, MongoDB, Apache Kafka, WebSockets
 
 \section{Experiência Profissional}
 
-\job{Desenvolvedor iOS}{Jun 2022 -- Atual}{AB InBev}{Belo Horizonte, MG}
+\job{Desenvolvedor iOS}{Jun 2022 -- Nov 2026}{AB InBev}{Belo Horizonte, MG}
 
 \begin{itemize}
 
 \item Desenvolvo e evoluo um aplicativo iOS B2B de e-commerce utilizado em múltiplos países, conectando varejistas ao catálogo de produtos da AB InBev.
 
-\item Participei da adoção de um Back-end for Front-end (BFF), implementando componentes reutilizáveis em SwiftUI, filtros, trays e novas experiências de interface, além do mapeamento de respostas para a camada de apresentação e tratamento de erros com async/await.
+\item Implementei componentes reutilizáveis em SwiftUI, filtros e novas experiências de interface integradas a um Back-end for Front-end (BFF), incluindo o mapeamento de respostas para a camada de apresentação e o tratamento de erros com async/await.
 
-\item Redesenhei a página de listagem de produtos utilizando The Composable Architecture (TCA), isolando estado, lógica de negócio e responsabilidades da interface.
+\item Liderei a migração de funcionalidades de descoberta de produtos para SwiftUI e The Composable Architecture (TCA), isolando estado e responsabilidades e facilitando a evolução da aplicação.
 
-\item Instrumentei eventos no Segment para ampliar a observabilidade da jornada do usuário, monitorando navegação, filtros, buscas e compras para apoiar decisões de produto.
+\item Desenvolvi busca offline com Realm e, posteriormente, SwiftData, incluindo buscas recentes, deep links e navegação orientada a estado.
+
+\item Instrumentei eventos no Segment ao longo de jornadas importantes, como navegação, filtros, buscas e compras, ampliando a observabilidade do produto.
 
 \item Desenvolvo testes unitários e de snapshot para reduzir regressões, além de utilizar New Relic e Crashlytics na investigação de problemas de performance e falhas em produção.
 
-\item Desenvolvo funcionalidades para múltiplos países utilizando localização, Firebase Remote Config, AppLanga, configurações específicas por mercado e testes A/B com Optimizely.
+\item Entrego funcionalidades para diferentes mercados utilizando localização, Firebase Remote Config, AppLanga, configurações específicas por país e testes A/B com Optimizely.
 
 \item Atuo em um monorepo modular com nove módulos compartilhados entre diferentes equipes. Também implementei o Mockoon em um aplicativo interno de demonstração, reduzindo a dependência do backend durante testes locais.
 
-\item Proponho soluções de arquitetura e automações com IA utilizando Cursor, Skills e MCP integrados ao Jira e Azure, acelerando refinamentos, implementação, documentação, versionamento e criação de Pull Requests.
+\item Estruturei fluxos de engenharia assistidos por IA com Cursor, Skills e MCP integrados ao Azure DevOps e Jira, apoiando refinamentos, implementação, documentação e criação de pull requests.
+
+\item Atuo como referência técnica em SwiftUI e arquitetura mobile, contribuindo em code reviews, discussões técnicas e decisões de arquitetura entre equipes.
 
 \end{itemize}
 
@@ -83,7 +74,7 @@ Desenvolvedor iOS com 6 anos de experiência em desenvolvimento de software, esp
 
 \item Reestruturei a camada de networking, substituindo uma implementação centralizada composta por métodos extensos por uma arquitetura modular com responsabilidades bem definidas.
 
-\item Reorganizei a persistência utilizando Core Data, desacoplei navegação, regras de negócio e interface e implementei testes unitários para as principais funcionalidades.
+\item Reestruturei persistência, navegação e regras de negócio com Core Data, além de implementar testes unitários para as funcionalidades principais.
 
 \item Reconstruí regras de negócio por meio de engenharia reversa das APIs e documentação incompleta, transformando um sistema legado sem arquitetura em uma base sustentável.
 
@@ -121,6 +112,7 @@ Centro Universitário de Belo Horizonte (UniBH) \hfill CR: 91,29/100
 
 \textbf{Idiomas:} Português nativo; inglês fluente, utilizado diariamente em reuniões, documentação e colaboração com equipes internacionais.
 
-\textbf{Práticas de trabalho:} Scrum, métodos ágeis, code review, pair programming, refinamentos técnicos e Planning Poker.
+\textbf{Práticas de trabalho:} Scrum, code review, pair programming, refinamentos técnicos e Planning Poker.
 
 \end{document}
+

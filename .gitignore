@@ -1,0 +1,11 @@
+# Generated build output
+/build/
+*.pdf
+
+# LaTeX auxiliary files
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz

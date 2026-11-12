@@ -1,42 +1,5 @@
 \documentclass[10pt,a4paper]{article}
-
-\usepackage[top=0.5in,bottom=0.5in,left=0.62in,right=0.62in]{geometry}
-\usepackage{enumitem}
-\usepackage{titlesec}
-\usepackage{hyperref}
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage{xcolor}
-\usepackage{parskip}
-
-\definecolor{accent}{HTML}{1A1A1A}
-\definecolor{link}{HTML}{0056B3}
-\hypersetup{
-    colorlinks=true,
-    urlcolor=link,
-    pdfborder={0 0 0}
-}
-
-\pagestyle{empty}
-
-\titleformat{\section}
-{\normalsize\bfseries\color{accent}}
-{}{0em}{}
-[\titlerule]
-
-\titlespacing*{\section}{0pt}{7pt}{3pt}
-
-\setlist[itemize]{
-    leftmargin=14pt,
-    itemsep=1.5pt,
-    topsep=2pt,
-    parsep=0pt
-}
-
-\newcommand{\job}[4]{%
-    \textbf{#1} \hfill \textbf{#2}\\
-    \textit{#3} \hfill \textit{#4}\\[-2pt]
-}
+\usepackage{../../styles/resume-style}
 
 \begin{document}
 
@@ -53,7 +16,7 @@
 
 \section{Professional Summary}
 
-Senior iOS Engineer with 6+ years of software engineering experience, specializing in Swift, SwiftUI, mobile architecture, and the modernization of complex applications. Experienced in migrating legacy UIKit codebases, building reusable components, modularizing codebases, and improving engineering workflows through AI-assisted development and automation. Currently developing a multi-country B2B e-commerce platform at AB InBev, collaborating with distributed teams and contributing to architectural decisions across shared modules.
+Senior iOS Engineer with 6+ years of software engineering experience, specializing in Swift, SwiftUI, mobile architecture, and the modernization of complex applications. Experienced in migrating legacy UIKit codebases, building reusable components, modularizing codebases, and improving engineering workflows through AI-assisted development and automation. Developed a multi-country B2B e-commerce platform at AB InBev, collaborating with distributed teams and contributing to architectural decisions across shared modules.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -87,7 +50,7 @@ REST APIs, Spring Boot, Apache Kafka, PostgreSQL, MongoDB, WebSockets
 
 \section{Professional Experience}
 
-\job{Senior iOS Engineer}{Jun 2022 -- Present}{AB InBev}{Belo Horizonte, Brazil}
+\job{Senior iOS Engineer}{Jun 2022 -- Nov 2026}{AB InBev}{Belo Horizonte, Brazil}
 
 \begin{itemize}
     \item Develop and evolve a multi-country B2B e-commerce iOS application serving retailers across international markets.
@@ -158,3 +121,4 @@ Portuguese (Native)
 English (Full Professional Proficiency)
 
 \end{document}
+
